@@ -1,0 +1,242 @@
+Web Dev:
+  HTML And CSS
+  javscript
+  python
+  django
+
+HTML:
+Introduction of different Web Technology
+Introduction
+
+
+HTML Elements
+
+Start tag   Element content     End tag
+<h1>                 My First Heading   </h1>
+<p>                  My first paragraph.    </p>
+<br>                  none                               none
+
+
+HTML Attributes
+
+    All HTML elements can have attributes
+    The href attribute of <a> specifies the URL of the page the link goes to
+    The src attribute of <img> specifies the path to the image to be displayed
+    The width and height attributes of <img> provide size information for images
+    The alt attribute of <img> provides an alternate text for an image
+    The style attribute is used to add styles to an element, such as color, font, size, and more
+    The lang attribute of the <html> tag declares the language of the Web page
+    The title attribute defines some extra information about an element
+
+HTML Headings
+
+ <h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+
+HTML Paragraphs
+
+ <p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+
+HTML Formatting
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+
+
+HTML Styles
+
+
+ <body>
+
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+</body>
+<tagname style="property:value;">
+
+HTML Links
+
+
+<a href="url">link text</a>
+
+The target attribute can have one of the following values:
+
+    _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame
+    _top - Opens the document in the full body of the window
+
+HTML Images
+
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+The width, height, and style attributes are all valid in HTML.
+
+ <div style="background-image: url('img_girl.jpg');">
+
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+HTML Tables
+
+ <table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+HTML Lists
+
+
+
+An unordered HTML list:
+
+    Item
+    Item
+    Item
+    Item
+
+An ordered HTML list:
+
+    1.First item
+    2.Second item
+    3.Third item
+    4.Fourth item
+
+
+Unordered HTML List - Choose List Item Marker
+
+The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:
+Value   Description
+disc    Sets the list item marker to a bullet (default)
+circle  Sets the list item marker to a circle
+square  Sets the list item marker to a square
+none    The list items will not be marked
+
+
+
+    Use the HTML <ul> element to define an unordered list
+    Use the CSS list-style-type property to define the list item marker
+    Use the HTML <li> element to define a list item
+    Lists can be nested
+    List items can contain other HTML elements
+    Use the CSS property float:left to display a list horizontally
+
+Ordered HTML List - The Type Attribute
+
+The type attribute of the <ol> tag, defines the type of the list item marker:
+Type                 Description
+type="1"    The list items will be numbered with numbers (default)
+type="A"    The list items will be numbered with uppercase letters
+type="a"    The list items will be numbered with lowercase letters
+type="I"    The list items will be numbered with uppercase roman numbers
+type="i"    The list items will be numbered with lowercase roman numbers
+
+
+
+    Use the HTML <ol> element to define an ordered list
+    Use the HTML type attribute to define the numbering type
+    Use the HTML <li> element to define a list item
+    Lists can be nested
+    List items can contain other HTML elements
+
+
+
+block vs inline
+
+block:
+
+<article>
+<aside>
+<div>
+<fieldset>
+<footer>
+<form>
+<h1>-<h6>
+<header>
+<hr>
+<li>
+<main>
+<nav>
+<ol>
+<p>
+<section>
+<table>
+<tfoot>
+<ul>
+<video>
+
+Here are the inline elements in HTML:
+<a>
+<b>
+<br>
+<button>
+<img>
+<input>
+<label>
+<script>
+<select>
+<small>
+<span>
+<strong>
+<textarea>
+
+
+
+    There are two display values: block and inline
+    A block-level element always starts on a new line and takes up the full width available
+    An inline element does not start on a new line and it only takes up as much width as necessary
+    The <div> element is a block-level and is often used as a container for other HTML elements
+    The <span> element is an inline container used to mark up a part of a text, or a part of a document
+
+
+
+HTML Forms
+
+ <form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+
+ <form action="/action_page.php" method="get">
+
+The <select> element defines a drop-down list:
+The <textarea> element defines a multi-line input field (a text area):
+The <button> element defines a clickable button:
+The <legend> element defines a caption for the <fieldset> element.
+
+
+HTML Scripts
